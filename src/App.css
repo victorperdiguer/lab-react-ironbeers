@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&family=Permanent+Marker&display=swap');
+
+html {
+  font-size:16px;
+  font-family:'Noto Sans';
+}
+
+body {
+  scroll-behavior: smooth;
+}
 
 .home-page {
-  height:100vh;
   display:flex;
   flex-direction:column;
   justify-content: space-between;
@@ -17,11 +25,15 @@
 }
 
 .navbar {
-  height: 8vh;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
   background-color:rgb(168, 191, 240);
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-icon {
@@ -31,4 +43,54 @@
 
 .nav-title {
   font-family:'Permanent Marker';
+  padding: 0;
+  margin: 0;
+}
+
+.beer-list {
+  padding-top:10vh;
+}
+
+.beer-card {
+  display:flex;
+  flex-direction:row;
+  gap: 5vw;
+  margin: 1vh 5vw;
+  padding: 1vh 0;
+  align-items: center;
+}
+
+.beer-image-container > img {
+  width: 15vw;
+}
+
+.beer-card-text {
+  width:75vw;
+}
+
+hr {
+  border-top: 2px solid #bbb;
+  border-radius: 5px;
+  margin: 0 2.5vw;
+}
+
+.beer-card-text > * {
+  margin: 0;
+  padding:0;
+}
+
+.beer-card-text > h1 {
+  font-size: 1.8rem;
+  padding-bottom: 1vh;
+}
+
+.beer-card-text > h2 {
+  font-size: 1rem;
+  font-style:italic;
+  color:#8f8f8f;
+  padding-bottom: 3vh;
+}
+
+.beer-card-text > h6 {
+  font-size: 0.8rem;
 }

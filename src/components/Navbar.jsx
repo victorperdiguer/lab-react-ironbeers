@@ -8,11 +8,15 @@ const Navbar = () => {
     }
     return (
         <nav className="navbar">
-            <img src="https://cdn-icons-png.flaticon.com/512/0/340.png" alt="back" onClick={backFunction} className="nav-icon"/>
+            <div className="icon-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/0/340.png" alt="back" onClick={backFunction} className="nav-icon"/>
+            </div>
             <h1 className="nav-title">IRONBEERS</h1>
-            <Link to="/">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="home" className="nav-icon"/>
-            </Link>
+            <div className="icon-container">
+                <Link to="/">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="home" className="nav-icon"/>
+                </Link>
+            </div>
         </nav>
     )
 };
