@@ -94,3 +94,59 @@ hr {
 .beer-card-text > h6 {
   font-size: 0.8rem;
 }
+
+.beer-detail {
+  padding-top: 12vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-container {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 2vw;
+}
+
+.detail-container > img {
+  height: 30vh;
+  margin: 0 auto;
+}
+
+.detail-container > * {
+  padding: 0;
+  margin: 0;
+}
+
+.beer-name {
+  padding-top:4vh;
+  font-family:'Permanent Marker';
+  font-size: 2rem;
+}
+
+.beer-attenuation, .beer-tagline, .beer-detail > h3 {
+  color:#8f8f8f;
+}
+
+.beer-tagline {
+  padding-top:2vh;
+  font-size:1.2rem;
+}
+
+.beer-date {
+  font-size:1rem;
+}
+
+.beer-detail > p {
+  padding: 3vh 0;
+  text-align: justify;
+}
+
+.beer-detail > h3 {
+  font-size:1rem;
+}

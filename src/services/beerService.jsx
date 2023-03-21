@@ -10,7 +10,7 @@ class BeerService {
         return this.api.get('/beers').then(({data}) => data).catch(error => console.log(error));
     }
     getBeerById(beerId) {
-        return this.api.get(`/${beerId}`).then(({data}) => data).catch(error => console.log(error));
+        return this.api.get(`/beers/${beerId}`).then(({data}) => data).catch(error => console.log(error));
     }
     getRandomBeer() {
         return this.api.get('/random').then(({data}) => data).catch(error => console.log(error));
