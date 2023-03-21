@@ -13,10 +13,13 @@ class BeerService {
         return this.api.get(`/beers/${beerId}`).then(({data}) => data).catch(error => console.log(error));
     }
     getRandomBeer() {
-        return this.api.get('/random').then(({data}) => data).catch(error => console.log(error));
+        return this.api.get('/beers/random').then(({data}) => data).catch(error => console.log(error));
     }
     findBeers(query) {
         return this.api.get(`/search?q=${query}`).then(({data}) => data).catch(error => console.log(error));
+    }
+    createBeer(body) {
+        return this.api.post('/beers/new', body).then(({ data }) => data).catch(err => console.error(err))
     }
 }
 
